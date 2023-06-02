@@ -66,11 +66,7 @@ Aquí tienes la tabla actualizada con los ejemplos de uso y la descripción de c
 
 | Comando/Expresión   | Descripción                                                   | Ejemplo de Uso                                                  | Qué hace el comando                                             |
 | ------------------- | ------------------------------------------------------------- | --------------------------------------------------------------- | --------------------------------------------------------------- |
-| `$?`                | Almacena el código de salida del comando más reciente.         | `echo $?`                                                       | Imprime el código de salida del último comando ejecutado.        |
-| `$#`                | Almacena el número de argumentos pasados a un script o función.| `echo $#`                                                       | Imprime el número de argumentos pasados al script o función.     |
-| `$0`                | Almacena el nombre del script o programa en ejecución.         | `echo $0`                                                       | Imprime el nombre del script o programa en ejecución.            |
-| `$1`                | Almacena el primer argumento pasado a un script o función.     | `echo $1`                                                       | Imprime el primer argumento pasado al script o función.          |
-| `$2`, `$3`, ...     | Almacenan los argumentos adicionales pasados a un script o función. | `echo $2`                                                    | Imprime el segundo argumento pasado al script o función.         |
+
 | `[[ -d <directorio> ]]` | Verifica si `<directorio>` existe y es un directorio.        | `if [[ -d $dir ]]; then echo "El directorio existe."; fi`        | Verifica si el directorio `$dir` existe y, en caso afirmativo, imprime "El directorio existe.". |
 | `[[ -f <archivo> ]]`    | Verifica si `<archivo>` existe y es un archivo regular.      | `if [[ -f $file ]]; then echo "El archivo existe."; fi`          | Verifica si el archivo `$file` existe y, en caso afirmativo, imprime "El archivo existe.". |
 | `[[ -e <ruta> ]]`       | Verifica si `<ruta>` existe (archivo o directorio).          | `if [[ -e $path ]]; then echo "La ruta existe."; fi`             | Verifica si la ruta `$path` existe y, en caso afirmativo, imprime "La ruta existe.". |
