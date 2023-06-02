@@ -65,7 +65,7 @@ Las variables en programación son contenedores que almacenan datos. Las asignac
 ## Operadores especiales
 Aquí tienes la tabla actualizada con los ejemplos de uso y la descripción de cada comando:
 
-| Comando/Expresión   | Descripción                                                   | Ejemplo de Uso                                                  | Qué hace el comando                                             |
+|-----------------------|---------------------------------------------------------------|-----------------------------------------------------------------|-----------------------------------------------------------------|
 
 | `[[ -d <directorio> ]]` | Verifica si `<directorio>` existe y es un directorio.        | `if [[ -d $dir ]]; then echo "El directorio existe."; fi`        | Verifica si el directorio `$dir` existe y, en caso afirmativo, imprime "El directorio existe.". |
 | `[[ -f <archivo> ]]`    | Verifica si `<archivo>` existe y es un archivo regular.      | `if [[ -f $file ]]; then echo "El archivo existe."; fi`          | Verifica si el archivo `$file` existe y, en caso afirmativo, imprime "El archivo existe.". |
