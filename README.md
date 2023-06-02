@@ -9,7 +9,7 @@ Una pequeña documentación en español para aprender a programar en bash.
 3. [Condicionales](#Condicionales)
 4. [Operadores especiales](#Operadores-especiales)
 5. [Redirección y tuberias](#Redirección-y-tuberias)
-
+6. [Colorear Texto y Embellezer nuestros scripts](Colorear-Texto)
 ## Comandos básicos para programación en bash
 Bashscript es un lenguaje de programación de scripts utilizado en sistemas Unix y Linux. Es ampliamente utilizado para automatizar tareas, escribir secuencias de comandos y desarrollar aplicaciones de línea de comandos. Su importancia radica en su capacidad para simplificar y agilizar la ejecución de comandos y programas, permitiendo la automatización de tareas repetitivas y la creación de scripts personalizados. Es ampliamente utilizado por administradores de sistemas, desarrolladores y usuarios avanzados para realizar diversas tareas, como administración del sistema, procesamiento de archivos, scripting de utilidades y más.
 
@@ -102,6 +102,7 @@ La redirección y las tuberías en Bash son herramientas clave para manipular el
 | `comando &> /dev/null`  | Redirige tanto la salida estándar como la salida de error estándar de un comando a la nada. | `comando &> /dev/null`                                                  | Descarta tanto la salida estándar como la salida de error de un comando.         |
 
 ## Colorear Texto
+Al resaltar partes específicas del script con colores, como mensajes de salida o información importante, se pueden destacar de manera efectiva informacion relevante, lo que hace mas amigable nuestro scripts, tambien podemos construir interfaz CLI muy bonitas, acontinuacion una lista code ANSI que uso adirio para embellezer mis script.
 | Color           | Código ANSI    | Ejemplo                             |
 | --------------- | -------------- | ----------------------------------- |
 | Blanco          | \e[0;37m       | echo -e "\e[0;37mTexto en Blanco\e[0m" |
