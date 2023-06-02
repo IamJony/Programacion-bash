@@ -120,5 +120,12 @@ Al resaltar partes específicas del script con colores, como mensajes de salida 
 | Morado Intenso  | \e[1;35m       | echo -e "\e[1;35mTexto en Morado Intenso\e[0m" |
 | Cian Intenso    | \e[1;36m       | echo -e "\e[1;36mTexto en Cian Intenso\e[0m" |
 | Blanco Intenso  | \e[1;37m       | echo -e "\e[1;37mTexto en Blanco Intenso\e[0m" |
+| Parpadeo Azul   | `\e[5;34m`     | echo -e "\e[5;34mTexto en Parpadeo Azul\e[0m"                |
+| Parpadeo Rojo   | `\e[5;31m`     | echo -e "\e[5;31mTexto en Parpadeo Rojo\e[0m"                |
+| Parpadeo Verde  | `\e[5;32m`     | echo -e "\e[5;32mTexto en Parpadeo Verde\e[0m"               |
+| Parpadeo Amarillo | `\e[5;33m`   | echo -e "\e[5;33mTexto en Parpadeo Amarillo\e[0m"            |
+| Parpadeo Morado | `\e[5;35m`     | echo -e "\e[5;35mTexto en Parpadeo Morado\e[0m"              |
+| Parpadeo Cian   | `\e[5;36m`     | echo -e "\e[5;36mTexto en Parpadeo Cian\e[0m"                |
+
 
 
