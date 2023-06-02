@@ -101,3 +101,24 @@ La redirección y las tuberías en Bash son herramientas clave para manipular el
 | `comando 2> /dev/null`  | Redirige la salida de error estándar de un comando a la nada.     | `rm archivo_inexistente 2> /dev/null`                                          | Intenta eliminar un archivo inexistente, pero los mensajes de error se descartan. |
 | `comando &> /dev/null`  | Redirige tanto la salida estándar como la salida de error estándar de un comando a la nada. | `comando &> /dev/null`                                                  | Descarta tanto la salida estándar como la salida de error de un comando.         |
 
+## Colorear Texto
+| Color           | Código ANSI    | Ejemplo                             |
+| --------------- | -------------- | ----------------------------------- |
+| Blanco          | \e[0;37m       | echo -e "\e[0;37mTexto en Blanco\e[0m" |
+| Negro           | \e[0;30m       | echo -e "\e[0;30mTexto en Negro\e[0m" |
+| Verde           | \e[0;32m       | echo -e "\e[0;32mTexto en Verde\e[0m" |
+| Amarillo        | \e[0;33m       | echo -e "\e[0;33mTexto en Amarillo\e[0m" |
+| Azul            | \e[0;34m       | echo -e "\e[0;34mTexto en Azul\e[0m" |
+| Rojo            | \e[0;31m       | echo -e "\e[0;31mTexto en Rojo\e[0m" |
+| Morado          | \e[0;35m       | echo -e "\e[0;35mTexto en Morado\e[0m" |
+| Cian            | \e[0;36m       | echo -e "\e[0;36mTexto en Cian\e[0m" |
+| Negro Intenso   | \e[1;30m       | echo -e "\e[1;30mTexto en Negro Intenso\e[0m" |
+| Rojo Intenso    | \e[1;31m       | echo -e "\e[1;31mTexto en Rojo Intenso\e[0m" |
+| Verde Intenso   | \e[1;32m       | echo -e "\e[1;32mTexto en Verde Intenso\e[0m" |
+| Amarillo Intenso| \e[1;33m       | echo -e "\e[1;33mTexto en Amarillo Intenso\e[0m" |
+| Azul Intenso    | \e[1;34m       | echo -e "\e[1;34mTexto en Azul Intenso\e[0m" |
+| Morado Intenso  | \e[1;35m       | echo -e "\e[1;35mTexto en Morado Intenso\e[0m" |
+| Cian Intenso    | \e[1;36m       | echo -e "\e[1;36mTexto en Cian Intenso\e[0m" |
+| Blanco Intenso  | \e[1;37m       | echo -e "\e[1;37mTexto en Blanco Intenso\e[0m" |
+
+
