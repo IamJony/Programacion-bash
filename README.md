@@ -61,6 +61,7 @@ Las variables en programación son contenedores que almacenan datos. Las asignac
 | `if condición1; then` <br> `comandos1` <br> `elif condición2; then` <br> `comandos2` <br> `else` <br> `comandos3` <br> `fi` | Condición con múltiples ramas, donde se evalúan condiciones secuenciales y se ejecutan los comandos correspondientes a la primera condición que se cumpla. Si ninguna condición se cumple, se ejecutan los comandos en la sección `else`. | ```if [[ $a -eq 1 ]]; then echo "Es 1"; elif [[ $a -eq 2 ]]; then echo "Es 2"; else echo "No es ni 1 ni 2"; fi``` | Verifica si la variable `a` es igual a 1. Si se cumple la condición, imprime "Es 1". Si no se cumple, verifica si la variable `a` es igual a 2. Si se cumple esta segunda condición, imprime "Es 2". Si no se cumple ninguna de las dos condiciones anteriores, imprime "No es ni 1 ni 2".
 
 
+
 ## Operadores especiales
 Aquí tienes la tabla actualizada con los ejemplos de uso y la descripción de cada comando:
 
@@ -72,9 +73,7 @@ Aquí tienes la tabla actualizada con los ejemplos de uso y la descripción de c
 | `[[ -r <archivo> ]]`    | Verifica si `<archivo>` tiene permisos de lectura.          | `if [[ -r $file ]]; then echo "El archivo es legible."; fi`      | Verifica si el archivo `$file` tiene permisos de lectura y, en caso afirmativo, imprime "El archivo es legible.". |
 | `[[ -w <archivo> ]]`    | Verifica si `<archivo>` tiene permisos de escritura.        | `if [[ -w $file ]]; then echo "El archivo es escribible."; fi`   | Verifica si el archivo `$file` tiene permisos de escritura y, en caso afirmativo, imprime "El archivo es escribible.". |
 | `[[ -x <archivo> ]]`    | Verifica si `<archivo>` tiene permisos de ejecución.        | `if [[ -x $file ]]; then echo "El archivo es ejecutable."; fi`   | Verifica si el archivo `$file` tiene permisos de ejecución y, en caso afirmativo, imprime "El archivo es ejecutable.". |
-| `[[ -s <archivo> ]]`    | Verifica si `<archivo>` existe y no está vacío.             | `if [[ -s $
-
-
+| `[[ -s <archivo> ]]`    | Verifica si `<archivo>` existe y no está vacío. 
 
 
 
