@@ -5,7 +5,7 @@ Una pequeña documentación en español para aprender a programar en bash.
 # Índice
 
 1. [Introducción](#Comandos básicos para programación en bash)
-2. [Variables y asignaciones](#Variables y asignaciones)
+2. [Variables y asignaciones](#Variables)
 3. [Condicionales](#Condicionales)
 4. [Operadores especiales](#Operadores especiales)
 5. [Redirección y tuberias](#Redirección y tuberias)
