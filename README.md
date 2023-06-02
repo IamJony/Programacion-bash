@@ -104,28 +104,28 @@ La redirección y las tuberías en Bash son herramientas clave para manipular el
 Al resaltar partes específicas del script con colores, como mensajes de salida o información importante, se pueden destacar de manera efectiva informacion relevante, lo que hace mas amigable nuestro scripts, tambien podemos construir interfaz CLI muy bonitas, acontinuacion una lista code ANSI que uso adirio para embellezer mis script.
 | Color           | Código ANSI    | Ejemplo                             |
 | --------------- | -------------- | ----------------------------------- |
-| Blanco          | \e[0;37m       | echo -e "\e[0;37mTexto en Blanco\e[0m" |
-| Negro           | \e[0;30m       | echo -e "\e[0;30mTexto en Negro\e[0m" |
-| Verde           | \e[0;32m       | echo -e "\e[0;32mTexto en Verde\e[0m" |
-| Amarillo        | \e[0;33m       | echo -e "\e[0;33mTexto en Amarillo\e[0m" |
-| Azul            | \e[0;34m       | echo -e "\e[0;34mTexto en Azul\e[0m" |
-| Rojo            | \e[0;31m       | echo -e "\e[0;31mTexto en Rojo\e[0m" |
-| Morado          | \e[0;35m       | echo -e "\e[0;35mTexto en Morado\e[0m" |
-| Cian            | \e[0;36m       | echo -e "\e[0;36mTexto en Cian\e[0m" |
-| Negro Intenso   | \e[1;30m       | echo -e "\e[1;30mTexto en Negro Intenso\e[0m" |
-| Rojo Intenso    | \e[1;31m       | echo -e "\e[1;31mTexto en Rojo Intenso\e[0m" |
-| Verde Intenso   | \e[1;32m       | echo -e "\e[1;32mTexto en Verde Intenso\e[0m" |
-| Amarillo Intenso| \e[1;33m       | echo -e "\e[1;33mTexto en Amarillo Intenso\e[0m" |
-| Azul Intenso    | \e[1;34m       | echo -e "\e[1;34mTexto en Azul Intenso\e[0m" |
-| Morado Intenso  | \e[1;35m       | echo -e "\e[1;35mTexto en Morado Intenso\e[0m" |
-| Cian Intenso    | \e[1;36m       | echo -e "\e[1;36mTexto en Cian Intenso\e[0m" |
-| Blanco Intenso  | \e[1;37m       | echo -e "\e[1;37mTexto en Blanco Intenso\e[0m" |
-| Parpadeo Azul   | `\e[5;34m`     | echo -e "\e[5;34mTexto en Parpadeo Azul\e[0m"                |
-| Parpadeo Rojo   | `\e[5;31m`     | echo -e "\e[5;31mTexto en Parpadeo Rojo\e[0m"                |
-| Parpadeo Verde  | `\e[5;32m`     | echo -e "\e[5;32mTexto en Parpadeo Verde\e[0m"               |
-| Parpadeo Amarillo | `\e[5;33m`   | echo -e "\e[5;33mTexto en Parpadeo Amarillo\e[0m"            |
-| Parpadeo Morado | `\e[5;35m`     | echo -e "\e[5;35mTexto en Parpadeo Morado\e[0m"              |
-| Parpadeo Cian   | `\e[5;36m`     | echo -e "\e[5;36mTexto en Parpadeo Cian\e[0m"                |
+| Blanco          | `\e[0;37m`       | `echo -e "\e[0;37mTexto en Blanco\e[0m"` |
+| Negro           | `\e[0;30m`       | `echo -e "\e[0;30mTexto en Negro\e[0m"`|
+| Verde           | `\e[0;32m`       | `echo -e "\e[0;32mTexto en Verde\e[0m"` |
+| Amarillo        | `\e[0;33m`       | `echo -e "\e[0;33mTexto en Amarillo\e[0m"` |
+| Azul            | `\e[0;34m`       | `echo -e "\e[0;34mTexto en Azul\e[0m"` |
+| Rojo            | `\e[0;31m`       | `echo -e "\e[0;31mTexto en Rojo\e[0m"` |
+| Morado          | `\e[0;35m`       | `echo -e "\e[0;35mTexto en Morado\e[0m"` |
+| Cian            | `\e[0;36m`       | `echo -e "\e[0;36mTexto en Cian\e[0m"` |
+| Negro Intenso   | `\e[1;30m`       | `echo -e "\e[1;30mTexto en Negro Intenso\e[0m"` |
+| Rojo Intenso    | `\e[1;31m`       | `echo -e "\e[1;31mTexto en Rojo Intenso\e[0m"` |
+| Verde Intenso   | `\e[1;32m`       | `echo -e "\e[1;32mTexto en Verde Intenso\e[0m"` |
+| Amarillo Intenso| `\e[1;33m`       | `echo -e "\e[1;33mTexto en Amarillo Intenso\e[0m"` |
+| Azul Intenso    | `\e[1;34m`       | `echo -e "\e[1;34mTexto en Azul Intenso\e[0m"` |
+| Morado Intenso  | `\e[1;35m`       | `echo -e "\e[1;35mTexto en Morado Intenso\e[0m"` |
+| Cian Intenso    | `\e[1;36m`       | `echo -e "\e[1;36mTexto en Cian Intenso\e[0m"` |
+| Blanco Intenso  | `\e[1;37m`       | `echo -e "\e[1;37mTexto en Blanco Intenso\e[0m"` |
+| Parpadeo Azul   | `\e[5;34m`     | `echo -e "\e[5;34mTexto en Parpadeo Azul\e[0m"`                |
+| Parpadeo Rojo   | `\e[5;31m`     | `echo -e "\e[5;31mTexto en Parpadeo Rojo\e[0m"`                |
+| Parpadeo Verde  | `\e[5;32m`     | `echo -e "\e[5;32mTexto en Parpadeo Verde\e[0m"`               |
+| Parpadeo Amarillo | `\e[5;33m`   | `echo -e "\e[5;33mTexto en Parpadeo Amarillo\e[0m"`            |
+| Parpadeo Morado | `\e[5;35m`     | `echo -e "\e[5;35mTexto en Parpadeo Morado\e[0m"`              |
+| Parpadeo Cian   | `\e[5;36m`     | `echo -e "\e[5;36mTexto en Parpadeo Cian\e[0m"`                |
 
 
 
