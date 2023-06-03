@@ -12,6 +12,7 @@ Una pequeña recopilacion de recursos en español para aprender a programar en b
 4. [Operadores especiales](#Operadores-especiales)
 5. [Redirección y tuberias](#Redirección-y-tuberias)
 6. [Colorear Texto y Embellezer nuestros scripts](#Colorear-Texto)
+7. [Web scraping con bash](#Web-scraping-con-bash)
 ## Comandos básicos para programación en bash
 Bashscript es un lenguaje de programación de scripts utilizado en sistemas Unix y Linux. Es ampliamente utilizado para automatizar tareas, escribir secuencias de comandos y desarrollar aplicaciones de línea de comandos. Su importancia radica en su capacidad para simplificar y agilizar la ejecución de comandos y programas, permitiendo la automatización de tareas repetitivas y la creación de scripts personalizados. Es ampliamente utilizado por administradores de sistemas, desarrolladores y usuarios avanzados para realizar diversas tareas, como administración del sistema, procesamiento de archivos, scripting de utilidades y más.
 
@@ -125,4 +126,68 @@ Al resaltar partes específicas del script con colores, como mensajes de salida 
 
 ## Ejemplo de interfaz CLI
 ![GitHub Logo](https://github.com/IamJony/Fast-Youtube-Downloader-Scripts/blob/71e8c0593477b8648f207ba50d5a0433e997360a/example.png?raw=true)
+## Web scraping con bash
+El web scraping es una técnica utilizada para extraer información de sitios web de manera automatizada. En este documento, te proporcionaré una guía paso a paso sobre cómo realizar web scraping utilizando el lenguaje de scripting Bash.
+
+## I. Herramientas 
+
+1. Curl: Curl es una herramienta de línea de comandos que te permite realizar solicitudes HTTP y HTTPS. Asegúrate de tenerlo instalado en tu sistema.
+2. Wget es una herramienta de línea de comandos que se utiliza para descargar archivos desde la web. Aunque no está diseñada específicamente para web scraping, puede ser una herramienta útil en ciertos escenarios
+
+## III. Pasos para realizar web scraping con Bash
+
+1. Identificar la URL de la página web que deseas extraer. Por ejemplo, supongamos que queremos extraer el título de un artículo de un blog. La URL sería algo como: `https://www.example.com/articulo`.
+
+2. Abre un archivo de texto vacío en tu editor de texto preferido y guárdalo con el nombre `scraping.sh`.
+
+3. Abre el archivo `scraping.sh` y añade lo siguiente al principio del archivo:
+
+   ```
+   bashCopy code
+   #!/bin/bash
+   ```
+
+   Esto asegura que el archivo sea interpretado por Bash.
+
+4. Añade el siguiente código para realizar la solicitud HTTP a la URL y almacenar la respuesta en una variable:
+
+   ```
+   bashCopy codeurl="https://www.example.com/articulo"
+   response=$(curl -s "$url")
+   ```
+
+   En este ejemplo, estamos utilizando la URL que identificamos previamente y la función `curl` para realizar una solicitud GET a la URL. El resultado se guarda en la variable `response`.
+
+5. Utiliza herramientas de manipulación de texto de Bash para extraer la información deseada del HTML. Por ejemplo, si queremos extraer el título del artículo, podemos usar el siguiente código:
+
+   ```
+   bashCopy codeurl="https://www.example.com/articulo"
+   response=$(curl -s "$url")
+   
+   title=$(echo "$response" | grep -o "<title>.*</title>" | sed -e 's/<[^>]*>//g')
+   
+   echo "Título del artículo: $title"
+   ```
+
+   En este caso, estamos utilizando `grep` para encontrar la etiqueta `<title>` en el HTML y luego `sed` para eliminar las etiquetas HTML del resultado. El título extraído se guarda en la variable `title` y se muestra en la terminal.
+
+6. Guarda el archivo `scraping.sh` y cierra tu editor de texto.
+
+7. Abre la terminal y navega hasta el directorio donde guardaste el archivo `scraping.sh`.
+
+8. Ejecuta el siguiente comando en la terminal para hacer el script ejecutable:
+
+   ```
+   bashCopy code
+   chmod +x scraping.sh
+   ```
+
+9. Finalmente, ejecuta el script con el siguiente comando:
+
+   ```
+   bashCopy code
+   ./scraping.sh
+   ```
+
+   El script se ejecutará y mostrará el título del artículo extraído de la página web.
 
