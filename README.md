@@ -194,7 +194,11 @@ El web scraping es una técnica utilizada para extraer información de sitios we
    
    ## Ejemplo practico webscraping
    ### EXTRAYENDO ARTICULO DESTACADO DE LA WIKIPEDIA SPANISH VERSION
-   ```
+  Acontinuacion un script sencillo que extrae el titulo y la url del articulo destacado de hoy de wikipedia, tenga en cuenta que puede que el script deje de funcionar, ya sea por que cambio algo en la estructura html de la wikipedia, pero el ejemplo es util para que usted vea todas las posibilidades que puede hacer con bash.
+  
+  ![Wiki](https://github.com/IamJony/semi-nord-theme-bluefish/blob/main/Screenshot_2023-06-03-05-35-50_1366x768.png?raw=true)
+  ```
+  
    url="https://es.wikipedia.org/wiki/Wikipedia:Portada"
    curl -s $url > .wikipedia_hoy.html
    optener_titulo=$(cat .wikipedia_hoy.html | grep 'id="main-tfa"' | grep -o 'title="[^"]*"' | grep -o '".*"' | tr -d '"' )
