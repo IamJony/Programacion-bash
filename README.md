@@ -143,7 +143,7 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 3. Abre el archivo `scraping.sh` y añade lo siguiente al principio del archivo:
 
    ```
-   bashCopy code
+  
    #!/bin/bash
    ```
 
@@ -152,7 +152,7 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 4. Añade el siguiente código para realizar la solicitud HTTP a la URL y almacenar la respuesta en una variable:
 
    ```
-   bashCopy codeurl="https://www.example.com/articulo"
+   codeurl="https://www.example.com/articulo"
    response=$(curl -s "$url")
    ```
 
@@ -161,7 +161,7 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 5. Utiliza herramientas de manipulación de texto de Bash para extraer la información deseada del HTML. Por ejemplo, si queremos extraer el título del artículo, podemos usar el siguiente código:
 
    ```
-   bashCopy codeurl="https://www.example.com/articulo"
+   codeurl="https://www.example.com/articulo"
    response=$(curl -s "$url")
    
    title=$(echo "$response" | grep -o "<title>.*</title>" | sed -e 's/<[^>]*>//g')
@@ -178,16 +178,34 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 8. Ejecuta el siguiente comando en la terminal para hacer el script ejecutable:
 
    ```
-   bashCopy code
+   
    chmod +x scraping.sh
    ```
 
 9. Finalmente, ejecuta el script con el siguiente comando:
 
    ```
-   bashCopy code
+   
    ./scraping.sh
    ```
 
    El script se ejecutará y mostrará el título del artículo extraído de la página web.
+   
+   ## EJEMPLO PRACTICO DE WEB SCRAPING
+   ### EXTRAYENDO ARTICULO DESTACADO DE LA WIKIPEDIA SPANISH VERSION
+   ```
+   url="https://es.wikipedia.org/wiki/Wikipedia:Portada"
+
+curl -s $url > .wikipedia_hoy.html
+
+optener_titulo=$(cat .wikipedia_hoy.html | grep 'id="main-tfa"' | grep -o 'title="[^"]*"' | grep -o '".*"' | tr -d '"' )
+
+optener_link=$(cat .wikipedia_hoy.html | grep 'id="main-tfa"' | grep -o 'href="[^"]*"' | grep -o '".*"' | sed 's/"//g' | sed 's|^|https://es.wikipedia.org/|')
+
+echo -e "\e[1;32m$optener_titulo\e[0m"
+echo -e "\e[1;33m$optener_link\e[0m"
+
+
+rm .wikipedia_hoy.html 2>/dev/null
+   ```
 
