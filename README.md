@@ -203,4 +203,4 @@ El web scraping es una técnica utilizada para extraer información de sitios we
    rm .wikipedia_hoy.html 2>/dev/null
    
    ```
-
+![webscraping](https://github.com/IamJony/semi-nord-theme-bluefish/blob/cb6f8e810b9c4c1e85084779799c07275bf4cf08/Screenshot_2023-06-03-05-12-04_1366x768.png?raw=true)
