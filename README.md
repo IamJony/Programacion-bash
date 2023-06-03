@@ -204,8 +204,6 @@ El web scraping es una técnica utilizada para extraer información de sitios we
    
    ```
 
-Este código en formato Markdown proporciona una explicación de cada línea:
-
 1. `url="https://es.wikipedia.org/wiki/Wikipedia:Portada"`: Asigna la URL de la página de portada de Wikipedia en español a la variable `url`.
 2. `curl -s $url > .wikipedia_hoy.html`: Descarga el contenido de la página de portada de Wikipedia y lo guarda en el archivo `.wikipedia_hoy.html`.
 3. `optener_titulo=$(cat .wikipedia_hoy.html | grep 'id="main-tfa"' | grep -o 'title="[^"]*"' | grep -o '".*"' | tr -d '"')`: Extrae el título del artículo destacado de hoy utilizando varias tuberías con `grep`, `tr` y `cat`. Se busca la línea que contiene `id="main-tfa"`, se extrae el valor del atributo `title` y se eliminan las comillas.
