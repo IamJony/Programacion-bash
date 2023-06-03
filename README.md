@@ -154,7 +154,7 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 
    ```
    codeurl="https://www.example.com/articulo"
-   response=$(curl -s "$url")
+   response=$(curl -s "$codeurl")
    ```
 
    En este ejemplo, estamos utilizando la URL que identificamos previamente y la función `curl` para realizar una solicitud GET a la URL. El resultado se guarda en la variable `response`.
@@ -163,7 +163,7 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 
    ```
    codeurl="https://www.example.com/articulo"
-   response=$(curl -s "$url")
+   response=$(curl -s "$codeurl")
    
    title=$(echo "$response" | grep -o "<title>.*</title>" | sed -e 's/<[^>]*>//g')
    
