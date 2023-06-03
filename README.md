@@ -1,7 +1,7 @@
 # Programacion-bash
 Una pequeña documentación en español para aprender a programar en bash.
 
-# El manual de bash scripting
+# Anexos
 [Manual de bash scripting para principiantes](https://es.wikibooks.org/wiki/El_Manual_de_BASH_Scripting_B%C3%A1sico_para_Principiantes#Llamando_a_una_variable)
 
 # Índice
