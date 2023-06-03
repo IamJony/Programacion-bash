@@ -203,16 +203,18 @@ El web scraping es una técnica utilizada para extraer información de sitios we
    rm .wikipedia_hoy.html 2>/dev/null
    
    ```
-El código proporcionado realiza las siguientes acciones:
 
-url="https://es.wikipedia.org/wiki/Wikipedia:Portada": Asigna la URL de la página de portada de Wikipedia en español a la variable url.
-curl -s $url > .wikipedia_hoy.html: Descarga el contenido de la página de portada de Wikipedia y lo guarda en el archivo .wikipedia_hoy.html.
-optener_titulo=$(cat .wikipedia_hoy.html | grep 'id="main-tfa"' | grep -o 'title="[^"]*"' | grep -o '".*"' | tr -d '"'): Utiliza grep, tr y cat para extraer el título del artículo destacado de hoy. Se busca la línea que contiene id="main-tfa", se extrae el valor del atributo title y se eliminan las comillas.
-optener_link=$(cat .wikipedia_hoy.html | grep 'id="main-tfa"' | grep -o 'href="[^"]*"' | grep -o '".*"' | sed 's/"//g' | sed 's|^|https://es.wikipedia.org/|'): Utiliza grep, sed y cat para extraer el enlace del artículo destacado de hoy. Se busca la línea que contiene id="main-tfa", se extrae el valor del atributo href, se eliminan las comillas y se agrega "https://es.wikipedia.org/" al principio del enlace.
-echo -e "\e[1;32m$optener_titulo\e[0m": Muestra el título del artículo destacado resaltado en verde.
-echo -e "\e[1;33m$optener_link\e[0m": Muestra el enlace del artículo destacado resaltado en amarillo.
-rm .wikipedia_hoy.html 2>/dev/null: Elimina el archivo .wikipedia_hoy.html utilizado para almacenar temporalmente el contenido descargado, y redirige cualquier mensaje de error al archivo nulo para que no se muestre.
-En resumen, el código descarga la página de portada de Wikipedia, extrae el título y el enlace del artículo destacado de hoy, y muestra estos valores resaltados en la salida. Finalmente, se elimina el archivo temporal utilizado.
+Este código en formato Markdown proporciona una explicación de cada línea:
+
+1. `url="https://es.wikipedia.org/wiki/Wikipedia:Portada"`: Asigna la URL de la página de portada de Wikipedia en español a la variable `url`.
+2. `curl -s $url > .wikipedia_hoy.html`: Descarga el contenido de la página de portada de Wikipedia y lo guarda en el archivo `.wikipedia_hoy.html`.
+3. `optener_titulo=$(cat .wikipedia_hoy.html | grep 'id="main-tfa"' | grep -o 'title="[^"]*"' | grep -o '".*"' | tr -d '"')`: Extrae el título del artículo destacado de hoy utilizando varias tuberías con `grep`, `tr` y `cat`. Se busca la línea que contiene `id="main-tfa"`, se extrae el valor del atributo `title` y se eliminan las comillas.
+4. `optener_link=$(cat .wikipedia_hoy.html | grep 'id="main-tfa"' | grep -o 'href="[^"]*"' | grep -o '".*"' | sed 's/"//g' | sed 's|^|https://es.wikipedia.org/|')`: Extrae el enlace del artículo destacado de hoy utilizando varias tuberías con `grep` y `sed`. Se busca la línea que contiene `id="main-tfa"`, se extrae el valor del atributo `href`, se eliminan las comillas y se agrega "https://es.wikipedia.org/" al principio del enlace.
+5. `echo -e "\e[1;32m$optener_titulo\e[0m"`: Muestra el título del artículo destacado resaltado en verde.
+6. `echo -e "\e[1;33m$optener_link\e[0m"`: Muestra el enlace del artículo destacado resaltado en amarillo.
+7. `rm .wikipedia_hoy.html 2>/dev/null`: Elimina el archivo `.wikipedia_hoy.html` utilizado para almacenar temporalmente el contenido descargado, y redirige cualquier mensaje de error al archivo nulo para que no se muestre.
+
+
 
 #### Resultado
 ![webscraping](https://github.com/IamJony/semi-nord-theme-bluefish/blob/cb6f8e810b9c4c1e85084779799c07275bf4cf08/Screenshot_2023-06-03-05-12-04_1366x768.png?raw=true)
