@@ -195,17 +195,12 @@ El web scraping es una técnica utilizada para extraer información de sitios we
    ### EXTRAYENDO ARTICULO DESTACADO DE LA WIKIPEDIA SPANISH VERSION
    ```
    url="https://es.wikipedia.org/wiki/Wikipedia:Portada"
-
-curl -s $url > .wikipedia_hoy.html
-
-optener_titulo=$(cat .wikipedia_hoy.html | grep 'id="main-tfa"' | grep -o 'title="[^"]*"' | grep -o '".*"' | tr -d '"' )
-
-optener_link=$(cat .wikipedia_hoy.html | grep 'id="main-tfa"' | grep -o 'href="[^"]*"' | grep -o '".*"' | sed 's/"//g' | sed 's|^|https://es.wikipedia.org/|')
-
-echo -e "\e[1;32m$optener_titulo\e[0m"
-echo -e "\e[1;33m$optener_link\e[0m"
-
-
-rm .wikipedia_hoy.html 2>/dev/null
+   curl -s $url > .wikipedia_hoy.html
+   optener_titulo=$(cat .wikipedia_hoy.html | grep 'id="main-tfa"' | grep -o 'title="[^"]*"' | grep -o '".*"' | tr -d '"' )
+   optener_link=$(cat .wikipedia_hoy.html | grep 'id="main-tfa"' | grep -o 'href="[^"]*"' | grep -o '".*"' | sed 's/"//g' |sed 's|^|https://es.wikipedia.org/|')
+   echo -e "\e[1;32m$optener_titulo\e[0m"
+   echo -e "\e[1;33m$optener_link\e[0m"
+   rm .wikipedia_hoy.html 2>/dev/null
+   
    ```
 
