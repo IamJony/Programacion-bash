@@ -65,6 +65,34 @@ Las variables en programación son contenedores que almacenan datos. Las asignac
 | `if condición; then` <br> `comandos1` <br> `else` <br> `comandos2` <br> `fi` | Condición con comandos ejecutados si se cumple la condición, y comandos ejecutados si no se cumple la condición. | ```if [[ $a -eq $b ]]; then echo "Son iguales"; else echo "No son iguales"; fi``` | Verifica si la variable `a` es igual a la variable `b`. Si se cumple la condición, imprime "Son iguales". Si no se cumple la condición, imprime "No son iguales". |
 | `if condición1; then` <br> `comandos1` <br> `elif condición2; then` <br> `comandos2` <br> `else` <br> `comandos3` <br> `fi` | Condición con múltiples ramas, donde se evalúan condiciones secuenciales y se ejecutan los comandos correspondientes a la primera condición que se cumpla. Si ninguna condición se cumple, se ejecutan los comandos en la sección `else`. | ```if [[ $a -eq 1 ]]; then echo "Es 1"; elif [[ $a -eq 2 ]]; then echo "Es 2"; else echo "No es ni 1 ni 2"; fi``` | Verifica si la variable `a` es igual a 1. Si se cumple la condición, imprime "Es 1". Si no se cumple, verifica si la variable `a` es igual a 2. Si se cumple esta segunda condición, imprime "Es 2". Si no se cumple ninguna de las dos condiciones anteriores, imprime "No es ni 1 ni 2".
 
+#### lista de parámetros que pueden ser usados en un condicional
+- `-a`: Lógico AND.
+- `-b`: Verifica si un archivo existe y es un archivo de bloques especiales.
+- `-c`: Verifica si un archivo existe y es un archivo de caracteres especiales.
+- `-d`: Verifica si un directorio existe.
+- `-e`: Verifica si un archivo o directorio existe.
+- `-f`: Verifica si un archivo existe y es regular.
+- `-g`: Verifica si un archivo existe y tiene el bit SGID establecido.
+- `-h`: Verifica si un archivo existe y es un enlace simbólico.
+- `-k`: Verifica si un archivo existe y tiene el bit sticky establecido.
+- `-p`: Verifica si un archivo existe y es un pipe (tubería) nominal.
+- `-r`: Verifica si un archivo existe y tiene permisos de lectura.
+- `-s`: Verifica si un archivo existe y tiene un tamaño mayor que cero.
+- `-t`: Verifica si un descriptor de archivo (número) está asociado con un terminal.
+- `-u`: Verifica si un archivo existe y tiene el bit SUID establecido.
+- `-w`: Verifica si un archivo existe y tiene permisos de escritura.
+- `-x`: Verifica si un archivo existe y tiene permisos de ejecución.
+- `-z`: Verifica si una cadena está vacía.
+- `-n`: Verifica si una cadena no está vacía.
+- `-eq`: Igualdad numérica.
+- `-ne`: Desigualdad numérica.
+- `-lt`: Menor que numérico.
+- `-le`: Menor o igual que numérico.
+- `-gt`: Mayor que numérico.
+- `-ge`: Mayor o igual que numérico.
+
+
+
 ## Operadores especiales
 
 
