@@ -143,7 +143,7 @@ La redirección y las tuberías en Bash son herramientas clave para manipular el
 -np o --no-parent: Evita la descarga de archivos que estén enlazados en directorios superiores a la URL proporcionada.
 
 ### Ejemplo sencillo de como establecer mis propios parametros de ejecucion
-El siguiente script define dos parámetros, --saludar y --cantar. Cada uno de estos parámetros tiene una función específica: --saludar imprime un saludo en pantalla, mientras que --cantar imprime una porción de una canción. Para ejecutar el script con alguno de estos parámetros, se utiliza el formato myscript.sh --saludar o myscript.sh --cantar, como se muestra en la imagen a continuación:
+El siguiente script define dos parámetros, --saludar y --cantar. Cada uno de estos parámetros tiene una función específica: --saludar imprime un saludo en pantalla, mientras que --cantar imprime una porción de una canción. Para ejecutar el script con alguno de estos parámetros, se utiliza el formato `myscript.sh --saludar` o `myscript.sh --cantar`, como se muestra en la imagen a continuación:
 
 ```bash
 #!/bin/bash
