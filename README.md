@@ -129,16 +129,23 @@ La redirección y las tuberías en Bash son herramientas clave para manipular el
  Definir un parámetro de ejecución en un script sirve para personalizar y modular su funcionamiento. Esto significa que mediante la entrada proporcionada por un usuario al momento de ejecutar el script, podemos determinar qué función específica o qué acción realizará el script
 
 **wget**: wget acepta muchos parametros como por ejemplo
+
 -O <file>: Especifica el nombre de archivo de salida para la descarga.
+
 -P <directory>: Guarda todos los archivos descargados en el directorio especificado.
+
 -q o --quiet: Ejecución silenciosa, no muestra información sobre el progreso de la descarga.
+
 -c o --continue: Continúa la descarga parcial de un archivo si la descarga fue interrumpida anteriormente.
+
 -r o --recursive: Descarga de forma recursiva todos los archivos enlazados desde la URL proporcionada.
+
 -np o --no-parent: Evita la descarga de archivos que estén enlazados en directorios superiores a la URL proporcionada.
 
 ### Ejemplo sencillo de como establecer mis propios parametros de ejecucion
 El siguiente script define dos parámetros, --saludar y --cantar. Cada uno de estos parámetros tiene una función específica: --saludar imprime un saludo en pantalla, mientras que --cantar imprime una porción de una canción. Para ejecutar el script con alguno de estos parámetros, se utiliza el formato myscript.sh --saludar o myscript.sh --cantar, como se muestra en la imagen a continuación:
-`
+
+```bash
 #!/bin/bash
 
 if [[ $1 == "--saludar" ]]; then
@@ -155,8 +162,7 @@ else
     
     _EOF_
 fi
-`
- 
+
 
 ## Colorear Texto
 Al resaltar partes específicas del script con colores, como mensajes de salida o información importante, se pueden destacar de manera efectiva informacion relevante, lo que hace mas amigable nuestro scripts, tambien podemos construir interfaz CLI muy bonitas, acontinuacion una lista code ANSI que uso adirio para embellezer mis script.
