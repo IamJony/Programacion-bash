@@ -160,8 +160,9 @@ else
       
       --saludar: imprime en pantalla un agradable saludo    
       --cantar: imprime en pantalla una porcion de una cancion
-    
-    _EOF_
+
+_EOF_
+
 fi
 ```
 
