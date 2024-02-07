@@ -174,7 +174,7 @@ La modularización en Bash scripting es la técnica de dividir un script Bash en
 #### Ejemplo practico de modularizacion usando source
 El siguiente script en Bash consta de dos partes: la primera contiene las funciones a definir y el segundo script contiene una interfaz de línea de comandos (CLI) intuitiva y básica. En el primer script se encuentra la función whatIsMyIP, que utiliza curl para hacer una petición a ipinfo.io. La respuesta es un archivo JSON, y usando la herramienta jq, extraemos el valor de la IP de la respuesta JSON. De esta manera, obtenemos la IP pública de nuestro ordenador.
 
-```
+```bash
 #!/bin/bash
 
 function whatIsMyIP () {
@@ -188,7 +188,7 @@ function whatIsMyIP () {
 ```
 Como pueden observar en el segundo script, se trata de una interfaz de línea de comandos (CLI) simple. Utilizamos la palabra reservada source para indicar la ruta del primer script donde se encuentra nuestra función whatIsMyIP. Usando echo, especificamos las opciones disponibles al usuario y, mediante read, capturamos la entrada del usuario. Luego, a través de una estructura case, especificamos las acciones que el script llevará a cabo si el usuario escribe "1" o "2".
 
-```
+```bash
 #!/bin/bash
 
 source /tmp/1.sh
@@ -208,7 +208,9 @@ case $opcion in
 ```
 
 ### Salida 
-Como pueden observar, al elegir la opción "1", el script arroja la IP pública del usuario. En este caso, la he censurado xd :)
+Como pueden observar, al elegir la opción "1", el script arroja la IP pública del usuario. En este caso, la he censurado xd :).
+
+
 ![ip](https://raw.githubusercontent.com/IamJony/semi-nord-theme-bluefish/main/image(1).png)
 
 
