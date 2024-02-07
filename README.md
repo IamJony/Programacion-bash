@@ -207,6 +207,11 @@ case $opcion in
 
 ```
 
+### Salida 
+Como pueden observar, al elegir la opción "1", el script arroja la IP pública del usuario. En este caso, la he censurado xd :)
+![ip](https://raw.githubusercontent.com/IamJony/semi-nord-theme-bluefish/main/image(1).png)
+
+
 ## Colorear Texto
 Al resaltar partes específicas del script con colores, como mensajes de salida o información importante, se pueden destacar de manera efectiva informacion relevante, lo que hace mas amigable nuestro scripts, tambien podemos construir interfaz CLI muy bonitas, acontinuacion una lista code ANSI que uso adirio para embellezer mis script.
 | Color           | Código ANSI    | Ejemplo                             |
