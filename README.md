@@ -166,6 +166,47 @@ _EOF_
 fi
 ```
 
+## Modularizacon 
+La modularización en Bash scripting es la técnica de dividir un script Bash en módulos más pequeños y manejables. Esto se logra organizando y separando el código en funciones independientes que realizan tareas específicas dentro del script. Estas funciones encapsulan partes del código con una tarea bien definida, lo que facilita su lectura, comprensión y mantenimiento.
+
+### Source 
+
+#### Ejemplo practico de modularizacion usando source
+El siguiente script en Bash consta de dos partes: la primera contiene las funciones a definir y el segundo script contiene una interfaz de línea de comandos (CLI) intuitiva y básica. En el primer script se encuentra la función whatIsMyIP, que utiliza curl para hacer una petición a ipinfo.io. La respuesta es un archivo JSON, y usando la herramienta jq, extraemos el valor de la IP de la respuesta JSON. De esta manera, obtenemos la IP pública de nuestro ordenador.
+
+```
+#!/bin/bash
+
+function whatIsMyIP () {
+   
+   response=$(curl -s https://ipinfo.io/json)
+   ip=$(echo "$response" | jq -r '.ip')                                   
+   echo "$ip"             
+   
+}
+
+```
+Como pueden observar en el segundo script, se trata de una interfaz de línea de comandos (CLI) simple. Utilizamos la palabra reservada source para indicar la ruta del primer script donde se encuentra nuestra función whatIsMyIP. Usando echo, especificamos las opciones disponibles al usuario y, mediante read, capturamos la entrada del usuario. Luego, a través de una estructura case, especificamos las acciones que el script llevará a cabo si el usuario escribe "1" o "2".
+
+```
+#!/bin/bash
+
+source /tmp/1.sh
+
+echo ""
+echo -e "\e[1;32m1) Averiguar mi IP
+2) Buscar informacion de IP \e[0m"
+echo ""
+
+read -p "selecione una opcion: " opcion
+
+case $opcion in
+  1) whatIsMyIP ;;
+  *) echo " \"$option\" Is Not A Valid Option"; sleep 1 ; clear ; ./2.sh ;;
+  esac
+
+```
+
 ## Colorear Texto
 Al resaltar partes específicas del script con colores, como mensajes de salida o información importante, se pueden destacar de manera efectiva informacion relevante, lo que hace mas amigable nuestro scripts, tambien podemos construir interfaz CLI muy bonitas, acontinuacion una lista code ANSI que uso adirio para embellezer mis script.
 | Color           | Código ANSI    | Ejemplo                             |
