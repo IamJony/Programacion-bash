@@ -191,7 +191,9 @@ Como pueden observar en el segundo script, se trata de una interfaz de línea de
 ```bash
 #!/bin/bash
 
-# recuerde que debe especificar la ruta donde se encuentra la funcion, en mi caso ese primer scripts esta en la ruta /tmp/ y se llama 1.sh 
+# recuerde que debe especificar la ruta donde se encuentra la funcion,
+# en mi caso ese primer scripts esta en la ruta /tmp/ y se llama 1.sh 
+
 source /tmp/1.sh
 
 echo ""
