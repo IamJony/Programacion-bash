@@ -169,7 +169,8 @@ fi
 ## Modularizacon 
 La modularización en Bash scripting es la técnica de dividir un script Bash en módulos más pequeños y manejables. Esto se logra organizando y separando el código en funciones independientes que realizan tareas específicas dentro del script. Estas funciones encapsulan partes del código con una tarea bien definida, lo que facilita su lectura, comprensión y mantenimiento.
 
-### Source 
+### Source
+El comando source en Bash es utilizado para ejecutar los comandos de un archivo dentro del contexto actual de la shell, en lugar de iniciar un nuevo proceso para ejecutarlos. En esencia, source carga y ejecuta los comandos contenidos en un archivo dentro del entorno actual, lo que incluye la definición de variables, funciones y otros comandos de shell válidos presentes en ese archivo
 
 #### Ejemplo practico de modularizacion usando source
 El siguiente script en Bash consta de dos partes: la primera contiene las funciones a definir y el segundo script contiene una interfaz de línea de comandos (CLI) intuitiva y básica. En el primer script se encuentra la función whatIsMyIP, que utiliza curl para hacer una petición a ipinfo.io. La respuesta es un archivo JSON, y usando la herramienta jq, extraemos el valor de la IP de la respuesta JSON. De esta manera, obtenemos la IP pública de nuestro ordenador.
