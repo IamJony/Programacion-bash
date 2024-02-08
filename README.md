@@ -171,7 +171,7 @@ fi
 La modularización en Bash scripting es la técnica de dividir un script Bash en módulos más pequeños y manejables. Esto se logra organizando y separando el código en funciones independientes que realizan tareas específicas dentro del script. Estas funciones encapsulan partes del código con una tarea bien definida, lo que facilita su lectura, comprensión y mantenimiento.
 
 ### Source
-El comando source en Bash es utilizado para ejecutar los comandos de un archivo dentro del contexto actual de la shell y quieras cargar variables o funciones desde otro archivo en lugar de iniciar un nuevo proceso para ejecutarlos. En esencia, source carga y ejecuta los comandos contenidos en un archivo dentro del entorno actual, lo que incluye la **definición de variables**, **funcione**s y **otros comandos de shell** válidos presentes en ese archivo. **Sin embargo, no puedes utilizar source directamente para asignar una variable con el resultado de un comando.**
+El comando source en Bash es utilizado para ejecutar los comandos de un archivo dentro del contexto actual de la shell y quieras cargar variables o funciones desde otro archivo en lugar de iniciar un nuevo proceso para ejecutarlos. En esencia, source carga y ejecuta los comandos contenidos en un archivo dentro del entorno actual, lo que incluye la **definición de variables**, **funcione**s y **otros comandos de shell** válidos presentes en ese archivo.
 
 #### Ejemplo practico de modularizacion usando source:
 El siguiente script en Bash consta de dos partes: la primera contiene las funciones a definir y el segundo script contiene una interfaz de línea de comandos (CLI) intuitiva y básica. En el primer script se encuentra la función whatIsMyIP, que utiliza curl para hacer una petición a ipinfo.io. La respuesta es un archivo JSON, y usando la herramienta jq, extraemos el valor de la IP de la respuesta JSON. De esta manera, obtenemos la IP pública de nuestro ordenador.
@@ -212,12 +212,14 @@ case $opcion in
 
 ```
 
-### Salida 
+#### Salida 
 Como pueden observar, al elegir la opción "1", el script arroja la IP pública del usuario. En este caso, la he censurado xd :).
 
 
 ![ip](https://raw.githubusercontent.com/IamJony/semi-nord-theme-bluefish/main/image(1).png)
 
+### Export
+El comando export en Bash se utiliza para marcar una variable como una **variable de entorno**. Esto significa que la variable estará disponible para cualquier proceso hijo que se inicie desde el proceso actual. 
 
 ## Colorear Texto
 Al resaltar partes específicas del script con colores, como mensajes de salida o información importante, se pueden destacar de manera efectiva informacion relevante, lo que hace mas amigable nuestro scripts, tambien podemos construir interfaz CLI muy bonitas, acontinuacion una lista code ANSI que uso adirio para embellezer mis script.
