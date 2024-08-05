@@ -355,3 +355,14 @@ A continuacion un script sencillo que extrae el titulo y la url del articulo des
 if [ "$EUID" -ne 0 ]; then
   echo 'Ejecuta el script como usuario root o con sudo.'
 fi
+
+#### Verificar la arquitectura del sistema
+
+```bash
+if [ "$(uname -m)" = "x86_64" ]; then
+  BIT="64"
+  echo "Su arquitectura es: $BIT"
+else
+  BIT="32"
+  echo "Su arquitectura es: $BIT"
+fi
