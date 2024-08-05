@@ -16,6 +16,7 @@ Una pequeña recopilacion de recursos en español para aprender a programar en b
 8. [Colorear Texto y Embellezer nuestros scripts](#Colorear-Texto)
 9. [Web scraping con bash](#Web-scraping-con-bash)
 10. [Ejemplo practico webscraping](#Ejemplo-practico-webscraping)
+11. [Ejemplo de codigos utiles](#Ejemplo-de-codigos-utiles)
 ## Comandos básicos para programación en bash
 Bashscript es un lenguaje de programación de scripts utilizado en sistemas Unix y Linux. Es ampliamente utilizado para automatizar tareas, escribir secuencias de comandos y desarrollar aplicaciones de línea de comandos. Su importancia radica en su capacidad para simplificar y agilizar la ejecución de comandos y programas, permitiendo la automatización de tareas repetitivas y la creación de scripts personalizados. Es ampliamente utilizado por administradores de sistemas, desarrolladores y usuarios avanzados para realizar diversas tareas, como administración del sistema, procesamiento de archivos, scripting de utilidades y más.
 
@@ -345,3 +346,12 @@ A continuacion un script sencillo que extrae el titulo y la url del articulo des
 
 #### Resultado
 ![webscraping](https://github.com/IamJony/semi-nord-theme-bluefish/blob/cb6f8e810b9c4c1e85084779799c07275bf4cf08/Screenshot_2023-06-03-05-12-04_1366x768.png?raw=true)
+
+### Ejemplo de códigos útiles
+
+#### Verificar si el script se está ejecutando como root
+
+```bash
+if [ "$EUID" -ne 0 ]; then
+  echo 'Ejecuta el script como usuario root o con sudo.'
+fi
