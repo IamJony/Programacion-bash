@@ -432,7 +432,7 @@ A continuacion un script sencillo que extrae el titulo y la url del articulo des
 #### Resultado
 ![webscraping](https://github.com/IamJony/semi-nord-theme-bluefish/blob/cb6f8e810b9c4c1e85084779799c07275bf4cf08/Screenshot_2023-06-03-05-12-04_1366x768.png?raw=true)
 
-### Ejemplo de códigos útiles
+## Ejemplo de códigos útiles
 
 #### Verificar si el script se está ejecutando como root
 
