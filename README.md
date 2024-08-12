@@ -5,7 +5,7 @@ Una pequeña recopilacion de recursos en español para aprender a programar en b
 1. [Manual de bash scripting para principiantes](https://es.wikibooks.org/wiki/El_Manual_de_BASH_Scripting_B%C3%A1sico_para_Principiantes#Llamando_a_una_variable)
 2. [Guia basica de bash](https://aprendeaprogramar.com/course/view.php?id=10)
 3. [Script en bash curso by atareao](https://atareao.es/tutorial/scripts-en-bash/)
-4. [Tutorial de programación en bash](freecodecamp.org/espanol/news/tutorial-de-programacion-de-bash-script-de-shell-de-linux-y-linea-de-comandos-para-principiantes/)
+4. [Tutorial de programación en bash](https://www.freecodecamp.org/espanol/news/tutorial-de-programacion-de-bash-script-de-shell-de-linux-y-linea-de-comandos-para-principiantes/)
 # Índice
 1. [Introducción](#Comandos-básicos-para-programación-en-bash)
 2. [Variables y asignaciones](#Variables-y-asignaciones)
