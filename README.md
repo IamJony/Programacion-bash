@@ -9,7 +9,7 @@ Una pequeña recopilacion de recursos en español para aprender a programar en b
 1. [Introducción](#Comandos-básicos-para-programación-en-bash)
 2. [Variables y asignaciones](#Variables-y-asignaciones)
 3. [Condicionales](#Condicionales)
-4. [Operadores especiales](#Operadores-especiales)
+4. [Expresiones de condicionales](#EXPRESIONES-CONDICIONALES)
 5. [Redirección y tuberias](#Redirección-y-tuberias)
 6. [Establecer parametros de ejecucion a mi script](#Establecer-parametros-de-ejecucion-a-mi-script)
 7. [Modularizacion](#Modularizacion)
