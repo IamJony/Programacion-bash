@@ -94,6 +94,116 @@ Las variables en programación son contenedores que almacenan datos. Las asignac
 - `-gt`: Mayor que numérico.
 - `-ge`: Mayor o igual que numérico.
 
+# EXPRESIONES CONDICIONALES
+
+## Condicionales de Archivo
+
+| Expresión | Valor | ¿Qué hace? |
+| --------- | ----- | ---------- |
+| `-a`      | `archivo` | Si el archivo existe. |
+| `-b`      | `archivo` | Si el archivo existe y es un archivo especial de bloque. |
+| `-c`      | `archivo` | Si el archivo existe y es un archivo especial de carácter. |
+| `-d`      | `archivo` | Si el archivo existe y es un directorio. |
+| `-e`      | `archivo` | Si el archivo existe. |
+| `-f`      | `archivo` | Si el archivo existe y es un archivo regular. |
+| `-g`      | `archivo` | Si el archivo existe y tiene el bit de grupo establecido. |
+| `-h`      | `archivo` | Si el archivo existe y es un enlace simbólico. |
+| `-k`      | `archivo` | Si el archivo existe y tiene el bit de pegajosidad establecido. |
+| `-p`      | `archivo` | Si el archivo existe y es una tubería con nombre (*FIFO*). |
+| `-r`      | `archivo` | Si el archivo existe y es legible. |
+| `-s`      | `archivo` | Si el archivo existe y su tamaño es mayor que cero. |
+| `-t`      | `fd`   | Si el descriptor de archivo está abierto y se refiere a un terminal. |
+| `-u`      | `archivo` | Si el archivo existe y tiene el bit de usuario establecido. |
+| `-w`      | `archivo` | Si el archivo existe y es escribible. |
+| `-x`      | `archivo` | Si el archivo existe y es ejecutable. |
+| `-G`      | `archivo` | Si el archivo existe y es propiedad del ID de grupo efectivo. |
+| `-L`      | `archivo` | Si el archivo existe y es un enlace simbólico. |
+| `-N`      | `archivo` | Si el archivo existe y ha sido modificado desde la última lectura. |
+| `-O`      | `archivo` | Si el archivo existe y es propiedad del ID de usuario efectivo. |
+| `-S`      | `archivo` | Si el archivo existe y es un socket. |
+
+## Comparaciones de Archivos
+
+| Expresión | ¿Qué hace? |
+| --------- | ---------- |
+| `archivo -ef archivo2` | Si ambos archivos se refieren al mismo inode y números de dispositivo. |
+| `archivo -nt archivo2` | Si `archivo` es más nuevo que `archivo2` (*usa el tiempo de modificación*) o si `archivo` existe y `archivo2` no. |
+| `archivo -ot archivo2` | Si `archivo` es más antiguo que `archivo2` (*usa el tiempo de modificación*) o si `archivo2` existe y `archivo` no. |
+
+## Condicionales de Variable
+
+| Expresión | Valor | ¿Qué hace? |
+| --------- | ----- | ---------- |
+| `-o`      | `opt` | Si la opción del shell está habilitada. |
+| `-v`      | `var` | Si la variable tiene un valor asignado. |
+| `-R`      | `var` | Si la variable es una referencia de nombre. |
+| `-z`      | `var` | Si la longitud de la cadena es cero. |
+| `-n`      | `var` | Si la longitud de la cadena no es cero. |
+
+## Comparaciones de Variables
+
+| Expresión | ¿Qué hace? |
+| --------- | ---------- |
+| `var = var2` | Igual a. |
+| `var == var2` | Igual a (*sinónimo de `=`*). |
+| `var != var2` | No igual a. |
+| `var < var2` | Menor que (*en orden alfabético ASCII*). |
+| `var > var2` | Mayor que (*en orden alfabético ASCII*). |
+
+<!-- FIN DEL CAPÍTULO -->
+
+<!-- INICIO DEL CAPÍTULO -->
+
+# OPERADORES ARITMÉTICOS
+
+## Asignación
+
+| Operadores | ¿Qué hace? |
+| ----------- | ---------- |
+| `=`         | Inicializa o cambia el valor de una variable. |
+
+## Aritméticos
+
+| Operadores | ¿Qué hace? |
+| ----------- | ---------- |
+| `+`         | Adición |
+| `-`         | Sustracción |
+| `*`         | Multiplicación |
+| `/`         | División |
+| `**`        | Exponenciación |
+| `%`         | Módulo |
+| `+=`        | Más-igual (*Incrementa una variable.*) |
+| `-=`        | Menos-igual (*Decrementa una variable.*) |
+| `*=`        | Por-igual (*Multiplica una variable.*) |
+| `/=`        | Dividido-igual (*Divide una variable.*) |
+| `%=`        | Módulo-igual (*Resto de dividir una variable.*) |
+
+## Bitwise
+
+| Operadores | ¿Qué hace? |
+| ----------- | ---------- |
+| `<<`        | Desplazamiento a la izquierda a nivel de bits |
+| `<<=`       | Desplazamiento a la izquierda-igual |
+| `>>`        | Desplazamiento a la derecha a nivel de bits |
+| `>>=`       | Desplazamiento a la derecha-igual |
+| `&`         | AND a nivel de bits |
+| `&=`        | AND a nivel de bits-igual |
+| `\|`        | OR a nivel de bits |
+| `\|=`       | OR a nivel de bits-igual |
+| `~`         | NOT a nivel de bits |
+| `^`         | XOR a nivel de bits |
+| `^=`        | XOR a nivel de bits-igual |
+
+## Lógicos
+
+| Operadores | ¿Qué hace? |
+| ----------- | ---------- |
+| `!`         | NOT |
+| `&&`        | AND |
+| `\|\|`      | OR |
+
+
+
 
 
 ## Operadores especiales
