@@ -428,7 +428,7 @@ echo -e "${Black}${BkgBrightWhite}Text with Bright White Background and Black Te
 ## Herramientas para Embellecer la Interfaz CLI de Nuestros Scripts
 1. **[Gum](https://github.com/charmbracelet/gum)**: Una herramienta para scripts de shell glamorosos 🎀. Gum facilita la creación de interfaces interactivas y estilizadas en la terminal, añadiendo un toque moderno a tus scripts de shell.
 
-2. **[Dialog](https://man7.org/linux/man-pages/man1/dialog.1.html)**: Una herramienta clásica para crear interfaces de usuario en modo texto. `dialog` permite crear una variedad de diálogos, como mensajes, menús y formularios, para mejorar la interacción en la línea de comandos.
+2. **[Dialog](https://bash.cyberciti.biz/guide/Bash_display_dialog_boxes)**: Una herramienta clásica para crear interfaces de usuario en modo texto. `dialog` permite crear una variedad de diálogos, como mensajes, menús y formularios, para mejorar la interacción en la línea de comandos.
 
 
 ## Web scraping con bash
