@@ -339,75 +339,10 @@ Al resaltar partes específicas del script con colores, como mensajes de salida 
 | Fondo Rojo      | `\033[41m`    | `echo -e "\033[0;30m\033[41mTexto con fondo rojo y texto negro\033[0m"` |
 
 ## Importar colores
+puedes crear un archivo llamado colors.sh y directamente importarlo con la palabra source
 
 ```bash
-#!/bin/bash
 
-White='\e[0;37m'
-Black='\e[0;30m'
-Green='\e[0;32m'
-Yellow='\e[0;33m'
-Blue='\e[0;34m'
-Red='\e[0;31m'
-Magenta='\e[0;35m'
-Cyan='\e[0;36m'
-
-# bold text color
-# color de texto en negrita
-BBlack='\e[1;30m'     # Bold Black
-BRed='\e[1;31m'       # Bold Red
-BGreen='\e[1;32m'     # Bold Green
-BYellow='\e[1;33m'    # Bold Yellow
-BBlue='\e[1;34m'      # Bold Blue
-BMagenta='\e[1;35m'   # Bold Magenta
-BCyan='\e[1;36m'      # Bold Cyan
-BWhite='\e[1;37m'     # Bold White
-
-# blinking text color codes
-# color de texto parpadeante
-BkBlue='\e[5;34m'     # Blinking Blue
-BkRed='\e[5;31m'      # Blinking Red
-BkGreen='\e[5;32m'    # Blinking Green
-BkYellow='\e[5;33m'   # Blinking Yellow
-BkMagenta='\e[5;35m'  # Blinking Magenta
-BkCyan='\e[5;36m'     # Blinking Cyan
-
-# underline text color codes
-# códigos de color de texto subrayado
-UlBlack='\e[4;30m'    # Underline Black
-UlRed='\e[4;31m'      # Underline Red
-UlGreen='\e[4;32m'    # Underline Green
-UlYellow='\e[4;33m'   # Underline Yellow
-UlBlue='\e[4;34m'     # Underline Blue
-UlMagenta='\e[4;35m'  # Underline Magenta
-UlCyan='\e[4;36m'     # Underline Cyan
-UlWhite='\e[4;37m'    # Underline White
-
-# background color codes
-# Definir códigos de color de fondo
-BgBlack='\033[40m'
-BgRed='\033[41m'
-BgGreen='\033[42m'
-BgYellow='\033[43m'
-BgBlue='\033[44m'
-BgMagenta='\033[45m'
-BgCyan='\033[46m'
-BgWhite='\033[47m'
-
-# Define bright background color codes
-# Definir códigos de color de fondo brillante
-BkgBrightBlack='\033[40;1m'
-BkgBrightRed='\033[41;1m'
-BkgBrightGreen='\033[42;1m'
-BkgBrightYellow='\033[43;1m'
-BkgBrightBlue='\033[44;1m'
-BkgBrightMagenta='\033[45;1m'
-BkgBrightCyan='\033[46;1m'
-BkgBrightWhite='\033[47;1m'
-
-# Reset color
-# Restablecer color
-Reset='\033[0m'
 
 ```
 
