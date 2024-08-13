@@ -16,7 +16,7 @@ Una pequeña recopilacion de recursos en español para aprender a programar en b
 6. [Establecer parametros de ejecucion a mi script](#Establecer-parametros-de-ejecucion-a-mi-script)
 7. [Modularizacion](#Modularizacion)
 8. [Colorear Texto y Embellezer nuestros scripts](#Colorear-Texto)
-9. [Interfaz CLI-GUI para nuestros scripts](#Ejemplo-de-interfaz-CLI)
+9. [Interfaz CLI-GUI para nuestros scripts](#Herramientas-para-Embellecer-la-Interfaz-CLI-de-Nuestros-Scripts)
 10. [Web scraping con bash](#Web-scraping-con-bash)
 11. [Ejemplo practico webscraping](#Ejemplo-practico-webscraping)
 12. [Porcion de Codigos utiles](#ejemplo-de-c%C3%B3digos-%C3%BAtiles)
