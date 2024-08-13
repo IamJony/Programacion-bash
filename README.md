@@ -339,9 +339,78 @@ Al resaltar partes específicas del script con colores, como mensajes de salida 
 | Fondo Rojo      | `\033[41m`    | `echo -e "\033[0;30m\033[41mTexto con fondo rojo y texto negro\033[0m"` |
 
 ## Importar colores
-puedes crear un archivo llamado colors.sh y directamente importarlo con la palabra source
+Puedes descargar manualmente el archivo `colors.sh` desde este repositorio, usando `wget --content-disposition "https://raw.githubusercontent.com/IamJony/Programacion-bash/main/src/colors.sh"` y luego importarlo en tus scripts de Bash usando el comando `source`. A continuación, se muestra un ejemplo de cómo descargar automáticamente el archivo `colors.sh` utilizando wget y cómo usarlo para imprimir colores en un script:
 
 ```bash
+#!/bin/bash
+
+# Import color variables from colors.sh
+
+[ -f "colors.sh" ] || wget --content-disposition "https://raw.githubusercontent.com/IamJony/Programacion-bash/main/src/colors.sh"
+
+source ./colors.sh
+
+# Use text colors
+# Uso de colores de texto
+echo -e "${White}Text in White${Reset}"
+echo -e "${Black}Text in Black${Reset}"
+echo -e "${Green}Text in Green${Reset}"
+echo -e "${Yellow}Text in Yellow${Reset}"
+echo -e "${Blue}Text in Blue${Reset}"
+echo -e "${Red}Text in Red${Reset}"
+echo -e "${Magenta}Text in Magenta${Reset}"
+echo -e "${Cyan}Text in Cyan${Reset}"
+
+# Show examples of bold text colors
+# Mostrar ejemplos de colores de texto en negrita
+echo -e "${BBlack}Text in Bold Black${Reset}"
+echo -e "${BRed}Text in Bold Red${Reset}"
+echo -e "${BGreen}Text in Bold Green${Reset}"
+echo -e "${BYellow}Text in Bold Yellow${Reset}"
+echo -e "${BBlue}Text in Bold Blue${Reset}"
+echo -e "${BMagenta}Text in Bold Magenta${Reset}"
+echo -e "${BCyan}Text in Bold Cyan${Reset}"
+echo -e "${BWhite}Text in Bold White${Reset}"
+
+# Show examples of blinking text colors
+# Mostrar ejemplos de colores de texto parpadeante
+echo -e "${BkBlue}Text in Blinking Blue${Reset}"
+echo -e "${BkRed}Text in Blinking Red${Reset}"
+echo -e "${BkGreen}Text in Blinking Green${Reset}"
+echo -e "${BkYellow}Text in Blinking Yellow${Reset}"
+echo -e "${BkMagenta}Text in Blinking Magenta${Reset}"
+echo -e "${BkCyan}Text in Blinking Cyan${Reset}"
+
+# Show examples of underline text colors
+# Mostrar ejemplos de colores de texto subrayado
+echo -e "${ULBlack}Text with Underline Black${Reset}"
+echo -e "${ULRed}Text with Underline Red${Reset}"
+echo -e "${ULGreen}Text with Underline Green${Reset}"
+echo -e "${ULYellow}Text with Underline Yellow${Reset}"
+echo -e "${ULBlue}Text with Underline Blue${Reset}"
+echo -e "${ULMagenta}Text with Underline Magenta${Reset}"
+echo -e "${ULCyan}Text with Underline Cyan${Reset}"
+echo -e "${ULWhite}Text with Underline White${Reset}"
+
+# Show examples of background colors
+# Mostrar ejemplos de colores de fondo
+echo -e "${Black}${BackgroundRed}Text with Red Background and Black Text${Reset}"
+echo -e "${Black}${BackgroundGreen}Text with Green Background and Black Text${Reset}"
+echo -e "${Black}${BackgroundYellow}Text with Yellow Background and Black Text${Reset}"
+echo -e "${Black}${BackgroundBlue}Text with Blue Background and Black Text${Reset}"
+echo -e "${Black}${BackgroundMagenta}Text with Magenta Background and Black Text${Reset}"
+echo -e "${Black}${BackgroundCyan}Text with Cyan Background and Black Text${Reset}"
+echo -e "${Black}${BackgroundWhite}Text with White Background and Black Text${Reset}"
+
+# Show examples of bright background colors
+# Mostrar ejemplos de colores de fondo brillante
+echo -e "${Black}${BkgBrightRed}Text with Bright Red Background and Black Text${Reset}"
+echo -e "${Black}${BkgBrightGreen}Text with Bright Green Background and Black Text${Reset}"
+echo -e "${Black}${BkgBrightYellow}Text with Bright Yellow Background and Black Text${Reset}"
+echo -e "${Black}${BkgBrightBlue}Text with Bright Blue Background and Black Text${Reset}"
+echo -e "${Black}${BkgBrightMagenta}Text with Bright Magenta Background and Black Text${Reset}"
+echo -e "${Black}${BkgBrightCyan}Text with Bright Cyan Background and Black Text${Reset}"
+echo -e "${Black}${BkgBrightWhite}Text with Bright White Background and Black Text${Reset}"
 
 
 ```
