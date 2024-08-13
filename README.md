@@ -339,7 +339,14 @@ Al resaltar partes específicas del script con colores, como mensajes de salida 
 | Fondo Rojo      | `\033[41m`    | `echo -e "\033[0;30m\033[41mTexto con fondo rojo y texto negro\033[0m"` |
 
 ## Importar colores
-Puedes descargar manualmente el archivo `colors.sh` desde este repositorio, usando `wget --content-disposition "https://raw.githubusercontent.com/IamJony/Programacion-bash/main/src/colors.sh"` y luego importarlo en tus scripts de Bash usando el comando `source`. A continuación, se muestra un ejemplo de cómo descargar automáticamente el archivo `colors.sh` utilizando wget y cómo usarlo para imprimir colores en un script:
+## Importar Colores
+
+Puedes descargar el archivo `colors.sh` manualmente desde este repositorio utilizando el siguiente comando `wget`:
+
+```bash
+wget --content-disposition "https://raw.githubusercontent.com/IamJony/Programacion-bash/main/src/colors.sh"
+```
+Una vez descargado el archivo, puedes importarlo en tus scripts de Bash con el comando source. A continuación, te mostramos un ejemplo de cómo hacerlo:
 
 ```bash
 #!/bin/bash
