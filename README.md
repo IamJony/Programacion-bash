@@ -339,7 +339,7 @@ Al resaltar partes específicas del script con colores, como mensajes de salida 
 | Fondo Rojo      | `\033[41m`    | `echo -e "\033[0;30m\033[41mTexto con fondo rojo y texto negro\033[0m"` |
 
 ## Importar colores
-## Importar Colores
+
 
 Puedes descargar el archivo `colors.sh` manualmente desde este repositorio utilizando el siguiente comando `wget`:
 
