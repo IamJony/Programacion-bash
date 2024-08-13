@@ -429,6 +429,17 @@ echo -e "${Black}${BkgBrightWhite}Text with Bright White Background and Black Te
 1. **[Gum](https://github.com/charmbracelet/gum)**: Una herramienta para scripts de shell glamorosos 🎀. Gum facilita la creación de interfaces interactivas y estilizadas en la terminal, añadiendo un toque moderno a tus scripts de shell.
 
 2. **[Dialog](https://bash.cyberciti.biz/guide/Bash_display_dialog_boxes)**: Una herramienta clásica para crear interfaces de usuario en modo texto. `dialog` permite crear una variedad de diálogos, como mensajes, menús y formularios, para mejorar la interacción en la línea de comandos.
+s
+## Herramientas para Crear Interfaces GUI en Nuestros Scripts
+
+1. **[Zenity](https://help.gnome.org/users/zenity/stable/)**: Herramienta para crear diálogos gráficos en entornos basados en GNOME. Permite generar diversos tipos de interfaces como cuadros de mensaje, formularios y menús desde la línea de comandos.
+
+2. **[Yad](https://yad-guide.ingk.se/)**: "Yet Another Dialog" es una herramienta que permite crear interfaces gráficas en el escritorio de manera sencilla. Es una alternativa a `dialog` con soporte para más tipos de interfaces gráficas y opciones de personalización.
+
+3. **[Xdialog](http://xdialog.free.fr/)**: Basado en `dialog`, `Xdialog` permite crear diálogos gráficos y menús en X11. Es útil para scripts que necesitan interfaces gráficas en sistemas basados en X Window.
+
+4. **[KDialog](https://develop.kde.org/docs/administration/kdialog/)**: Herramienta de KDE para crear diálogos gráficos desde scripts. Permite la integración de ventanas emergentes, mensajes y formularios en el entorno de escritorio KDE.
+
 
 
 ## Web scraping con bash
