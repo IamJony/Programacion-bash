@@ -424,6 +424,13 @@ echo -e "${Black}${BkgBrightWhite}Text with Bright White Background and Black Te
 
 ## Ejemplo de interfaz CLI
 ![GitHub Logo](https://github.com/IamJony/Fast-Youtube-Downloader-Scripts/blob/71e8c0593477b8648f207ba50d5a0433e997360a/example.png?raw=true)
+
+## Herramientas para Embellecer la Interfaz CLI de Nuestros Scripts
+1. **[Gum](https://github.com/charmbracelet/gum)**: Una herramienta para scripts de shell glamorosos 🎀. Gum facilita la creación de interfaces interactivas y estilizadas en la terminal, añadiendo un toque moderno a tus scripts de shell.
+
+2. **[Dialog](https://man7.org/linux/man-pages/man1/dialog.1.html)**: Una herramienta clásica para crear interfaces de usuario en modo texto. `dialog` permite crear una variedad de diálogos, como mensajes, menús y formularios, para mejorar la interacción en la línea de comandos.
+
+
 ## Web scraping con bash
 El web scraping es una técnica utilizada para extraer información de sitios web de manera automatizada. En este documento, te proporcionaré una guía paso a paso sobre cómo realizar web scraping utilizando el lenguaje de scripting Bash.
 
