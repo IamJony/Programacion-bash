@@ -336,7 +336,7 @@ Al resaltar partes específicas del script con colores, como mensajes de salida 
 | Parpadeo Morado | `\e[5;35m`     | `echo -e "\e[5;35mTexto en Parpadeo Morado\e[0m"`              |
 | Parpadeo Cian   | `\e[5;36m`     | `echo -e "\e[5;36mTexto en Parpadeo Cian\e[0m"`                |
 | No Color        | `\033[0m`      |                                                                |
-| Fondo Rojo      | `'\033[41m'    | `echo -e "\033[0;30m\033[41mTexto con fondo rojo y texto negro\033[0m"` |
+| Fondo Rojo      | `\033[41m`    | `echo -e "\033[0;30m\033[41mTexto con fondo rojo y texto negro\033[0m"` |
 
 ## Ejemplo de interfaz CLI
 ![GitHub Logo](https://github.com/IamJony/Fast-Youtube-Downloader-Scripts/blob/71e8c0593477b8648f207ba50d5a0433e997360a/example.png?raw=true)
