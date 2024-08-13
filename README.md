@@ -16,9 +16,10 @@ Una pequeña recopilacion de recursos en español para aprender a programar en b
 6. [Establecer parametros de ejecucion a mi script](#Establecer-parametros-de-ejecucion-a-mi-script)
 7. [Modularizacion](#Modularizacion)
 8. [Colorear Texto y Embellezer nuestros scripts](#Colorear-Texto)
-9. [Web scraping con bash](#Web-scraping-con-bash)
-10. [Ejemplo practico webscraping](#Ejemplo-practico-webscraping)
-11. [Porcion de Codigos utiles](#ejemplo-de-c%C3%B3digos-%C3%BAtiles)
+9. [Interfaz CLI-GUI para nuestros scripts](#Ejemplo-de-interfaz-CLI)
+10. [Web scraping con bash](#Web-scraping-con-bash)
+11. [Ejemplo practico webscraping](#Ejemplo-practico-webscraping)
+12. [Porcion de Codigos utiles](#ejemplo-de-c%C3%B3digos-%C3%BAtiles)
 ## Comandos básicos para programación en bash
 Bashscript es un lenguaje de programación de scripts utilizado en sistemas Unix y Linux. Es ampliamente utilizado para automatizar tareas, escribir secuencias de comandos y desarrollar aplicaciones de línea de comandos. Su importancia radica en su capacidad para simplificar y agilizar la ejecución de comandos y programas, permitiendo la automatización de tareas repetitivas y la creación de scripts personalizados. Es ampliamente utilizado por administradores de sistemas, desarrolladores y usuarios avanzados para realizar diversas tareas, como administración del sistema, procesamiento de archivos, scripting de utilidades y más.
 
