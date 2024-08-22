@@ -559,3 +559,12 @@ else
   echo "Su arquitectura es: $BIT"
 fi
 ```
+
+#### Verificar si un paquete esta instalado
+```bash
+if ! command -v yt-dlp &> /dev/null; then
+    echo "No esta instalado yt-dlp"
+else
+    echo "Esta instalado yt-dlp"
+fi
+```
