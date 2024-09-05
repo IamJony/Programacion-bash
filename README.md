@@ -462,7 +462,7 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 
 3. Abre el archivo `scraping.sh` y añade lo siguiente al principio del archivo:
 
-   ```
+   ```bash
   
    #!/bin/bash
    ```
@@ -471,7 +471,7 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 
 4. Añade el siguiente código para realizar la solicitud HTTP a la URL y almacenar la respuesta en una variable:
 
-   ```
+   ```bash
    codeurl="https://www.example.com/articulo"
    response=$(curl -s "$codeurl")
    ```
@@ -480,7 +480,7 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 
 5. Utiliza herramientas de manipulación de texto de Bash para extraer la información deseada del HTML. Por ejemplo, si queremos extraer el título del artículo, podemos usar el siguiente código:
 
-   ```
+   ```bash
    codeurl="https://www.example.com/articulo"
    response=$(curl -s "$codeurl")
    
@@ -497,14 +497,14 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 
 8. Ejecuta el siguiente comando en la terminal para hacer el script ejecutable:
 
-   ```
+   ```bash
    
    chmod +x scraping.sh
    ```
 
 9. Finalmente, ejecuta el script con el siguiente comando:
 
-   ```
+   ```bash
    
    ./scraping.sh
    ```
@@ -517,7 +517,7 @@ A continuacion un script sencillo que extrae el titulo y la url del articulo des
   
   ![Wiki](https://github.com/IamJony/semi-nord-theme-bluefish/blob/main/Screenshot_2023-06-03-05-35-50_1366x768.png?raw=true)
  ### Script en bash
- ```
+ ```bash
  
    url="https://es.wikipedia.org/wiki/Wikipedia:Portada"
    curl -s $url > .wikipedia_hoy.html
