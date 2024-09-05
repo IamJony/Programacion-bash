@@ -448,8 +448,11 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 
 ## I. Herramientas 
 
-1. Curl: Curl es una herramienta de línea de comandos que te permite realizar solicitudes HTTP y HTTPS. Asegúrate de tenerlo instalado en tu sistema.
-2. Wget es una herramienta de línea de comandos que se utiliza para descargar archivos desde la web. Aunque no está diseñada específicamente para web scraping, puede ser una herramienta útil en ciertos escenarios
+1. [curl](https://curl.se/docs/manpage.html): Curl es una herramienta de línea de comandos que te permite realizar solicitudes HTTP y HTTPS. Asegúrate de tenerlo instalado en tu sistema.
+2. [wget](https://www.gnu.org/software/wget/) es una herramienta de línea de comandos que se utiliza para descargar archivos desde la web. Aunque no está diseñada específicamente para web scraping, puede ser una herramienta útil en ciertos escenarios.
+3. [jq](https://jqlang.github.io/jq/): jq es un procesador JSON de línea de comandos liviano y flexible.
+4. [pup](https://github.com/ericchiang/pup): pup es una herramienta de línea de comandos para procesar HTML. Lee desde la entrada estándar, imprime en la salida estándar y permite al usuario filtrar partes de la página mediante selectores CSS.
+5. [reliq](https://github.com/TUVIMEN/reliq):reliq es una herramienta de búsqueda y análisis de HTML.
 
 ## III. Pasos para realizar web scraping con Bash
 
