@@ -449,17 +449,25 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 ## I. Herramientas 
 
 1. **[curl](https://curl.se/docs/manpage.html):** Curl es una herramienta de línea de comandos que te permite realizar solicitudes HTTP y HTTPS. Asegúrate de tenerlo instalado en tu sistema.
-2. **[wget](https://www.gnu.org/software/wget/):** Es una herramienta de línea de comandos que se utiliza para descargar archivos desde la web. Aunque no está diseñada específicamente para web scraping, puede ser una herramienta útil en ciertos escenarios.
-3. **[jq](https://jqlang.github.io/jq/):** jq es un procesador JSON de línea de comandos liviano y flexible.
-4. **[pup](https://github.com/ericchiang/pup):** Es una herramienta de línea de comandos para procesar HTML. Lee desde la entrada estándar, imprime en la salida estándar y permite al usuario filtrar partes de la página mediante selectores CSS.
-5. **[reliq](https://github.com/TUVIMEN/reliq):** Es una herramienta de búsqueda y análisis de HTML.
+   
+3. **[wget](https://www.gnu.org/software/wget/):** Es una herramienta de línea de comandos que se utiliza para descargar archivos desde la web. Aunque no está diseñada específicamente para web scraping, puede ser una herramienta útil en ciertos escenarios.
+   
+5. **[jq](https://jqlang.github.io/jq/):** jq es un procesador JSON de línea de comandos liviano y flexible.
+   
+7. **[pup](https://github.com/ericchiang/pup):** Es una herramienta de línea de comandos para procesar HTML. Lee desde la entrada estándar, imprime en la salida estándar y permite al usuario filtrar partes de la página mediante selectores CSS.
+   
+9. **[reliq](https://github.com/TUVIMEN/reliq):** Es una herramienta de búsqueda y análisis de HTML.
 
 ## II. Ejemplo de herramientas y proyectos que usan tecnicas avanzadas de web scraping en bash
 1. **[torge](https://github.com/TUVIMEN/torge):** Un script de shell para buscar enlaces en sitios de torrents.
-2. **[fzf-book-scraping](https://github.com/IamJony/book-scraping):** Un script de Bash para buscar y descargar libros usando bibliotecas en la sombra
-3. **[animu-cli](https://github.com/Pirrandi/animu-cli):** Visualizador de anime para Linux mediante terminal.
-4. **[sedmail](https://github.com/KevCui/sendmail):** Envía correos electrónicos anónimos a cualquier destinatario desde tu terminal
-5. **[ani-cli](https://github.com/pystardust/ani-cli):** Una herramienta CLI para navegar y reproducir anime.
+   
+3. **[fzf-book-scraping](https://github.com/IamJony/book-scraping):** Un script de Bash para buscar y descargar libros usando bibliotecas en la sombra.
+   
+5. **[animu-cli](https://github.com/Pirrandi/animu-cli):** Visualizador de anime para Linux mediante terminal.
+   
+7. **[sedmail](https://github.com/KevCui/sendmail):** Envía correos electrónicos anónimos a cualquier destinatario desde tu terminal.
+   
+9. **[ani-cli](https://github.com/pystardust/ani-cli):** Una herramienta CLI para navegar y reproducir anime.
 
 ## III. Pasos para realizar web scraping con Bash
 
