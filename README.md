@@ -427,19 +427,19 @@ echo -e "${Black}${BkgBrightWhite}Text with Bright White Background and Black Te
 ![GitHub Logo](https://github.com/IamJony/Fast-Youtube-Downloader-Scripts/blob/71e8c0593477b8648f207ba50d5a0433e997360a/example.png?raw=true)
 
 ## Herramientas para Embellecer la Interfaz CLI de Nuestros Scripts
-1. **[Gum](https://github.com/charmbracelet/gum)**: Una herramienta para scripts de shell glamorosos 🎀. Gum facilita la creación de interfaces interactivas y estilizadas en la terminal, añadiendo un toque moderno a tus scripts de shell.
+1. **[gum](https://github.com/charmbracelet/gum)**: Una herramienta para scripts de shell glamorosos 🎀. Gum facilita la creación de interfaces interactivas y estilizadas en la terminal, añadiendo un toque moderno a tus scripts de shell.
 
-2. **[Dialog](https://bash.cyberciti.biz/guide/Bash_display_dialog_boxes)**: Una herramienta clásica para crear interfaces de usuario en modo texto. `dialog` permite crear una variedad de diálogos, como mensajes, menús y formularios, para mejorar la interacción en la línea de comandos.
+2. **[dialog](https://bash.cyberciti.biz/guide/Bash_display_dialog_boxes)**: Una herramienta clásica para crear interfaces de usuario en modo texto. `dialog` permite crear una variedad de diálogos, como mensajes, menús y formularios, para mejorar la interacción en la línea de comandos.
 s
 ## Herramientas para Crear Interfaces GUI en Nuestros Scripts
 
-1. **[Zenity](https://help.gnome.org/users/zenity/stable/)**: Herramienta para crear diálogos gráficos en entornos basados en GNOME. Permite generar diversos tipos de interfaces como cuadros de mensaje, formularios y menús desde la línea de comandos.
+1. **[zenity](https://help.gnome.org/users/zenity/stable/)**: Herramienta para crear diálogos gráficos en entornos basados en GNOME. Permite generar diversos tipos de interfaces como cuadros de mensaje, formularios y menús desde la línea de comandos.
 
-2. **[Yad](https://yad-guide.ingk.se/)**: "Yet Another Dialog" es una herramienta que permite crear interfaces gráficas en el escritorio de manera sencilla. Es una alternativa a `dialog` con soporte para más tipos de interfaces gráficas y opciones de personalización.
+2. **[yad](https://yad-guide.ingk.se/)**: "Yet Another Dialog" es una herramienta que permite crear interfaces gráficas en el escritorio de manera sencilla. Es una alternativa a `dialog` con soporte para más tipos de interfaces gráficas y opciones de personalización.
 
-3. **[Xdialog](http://xdialog.free.fr/)**: Basado en `dialog`, `Xdialog` permite crear diálogos gráficos y menús en X11. Es útil para scripts que necesitan interfaces gráficas en sistemas basados en X Window.
+3. **[xdialog](http://xdialog.free.fr/)**: Basado en `dialog`, `Xdialog` permite crear diálogos gráficos y menús en X11. Es útil para scripts que necesitan interfaces gráficas en sistemas basados en X Window.
 
-4. **[KDialog](https://develop.kde.org/docs/administration/kdialog/)**: Herramienta de KDE para crear diálogos gráficos desde scripts. Permite la integración de ventanas emergentes, mensajes y formularios en el entorno de escritorio KDE.
+4. **[kDialog](https://develop.kde.org/docs/administration/kdialog/)**: Herramienta de KDE para crear diálogos gráficos desde scripts. Permite la integración de ventanas emergentes, mensajes y formularios en el entorno de escritorio KDE.
 
 
 
@@ -448,11 +448,11 @@ El web scraping es una técnica utilizada para extraer información de sitios we
 
 ## I. Herramientas 
 
-1. [curl](https://curl.se/docs/manpage.html): Curl es una herramienta de línea de comandos que te permite realizar solicitudes HTTP y HTTPS. Asegúrate de tenerlo instalado en tu sistema.
-2. [wget](https://www.gnu.org/software/wget/) es una herramienta de línea de comandos que se utiliza para descargar archivos desde la web. Aunque no está diseñada específicamente para web scraping, puede ser una herramienta útil en ciertos escenarios.
-3. [jq](https://jqlang.github.io/jq/): jq es un procesador JSON de línea de comandos liviano y flexible.
-4. [pup](https://github.com/ericchiang/pup): pup es una herramienta de línea de comandos para procesar HTML. Lee desde la entrada estándar, imprime en la salida estándar y permite al usuario filtrar partes de la página mediante selectores CSS.
-5. [reliq](https://github.com/TUVIMEN/reliq):reliq es una herramienta de búsqueda y análisis de HTML.
+1. **[curl](https://curl.se/docs/manpage.html):** Curl es una herramienta de línea de comandos que te permite realizar solicitudes HTTP y HTTPS. Asegúrate de tenerlo instalado en tu sistema.
+2. **[wget](https://www.gnu.org/software/wget/):** es una herramienta de línea de comandos que se utiliza para descargar archivos desde la web. Aunque no está diseñada específicamente para web scraping, puede ser una herramienta útil en ciertos escenarios.
+3. **[jq](https://jqlang.github.io/jq/):** jq es un procesador JSON de línea de comandos liviano y flexible.
+4. **[pup](https://github.com/ericchiang/pup):** pup es una herramienta de línea de comandos para procesar HTML. Lee desde la entrada estándar, imprime en la salida estándar y permite al usuario filtrar partes de la página mediante selectores CSS.
+5. **[reliq](https://github.com/TUVIMEN/reliq):**reliq es una herramienta de búsqueda y análisis de HTML.
 
 ## III. Pasos para realizar web scraping con Bash
 
